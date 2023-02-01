@@ -1,0 +1,10 @@
+main {
+    padding: 0 5rem 2rem 5rem;
+    p {
+        line-height: 1.8;
+    }
+    p.more-information {
+        margin: $margin-primary 0 0 0;
+        max-width: 750px;
+    }
+}

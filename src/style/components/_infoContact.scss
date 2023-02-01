@@ -1,0 +1,94 @@
+aside {
+  @include bigFather;
+  margin-right: $margin-primary;
+  width: 450px;
+  padding: $margin-primary;
+  height: max-content;
+
+  .email,
+  .phone,
+  .adress {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .phone,
+  .adress {
+    margin-top: $margin-primary;
+  }
+
+  :where(.email, .phone, .adress) img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 7px;
+    padding: 1rem;
+    background: $gradient-color;
+    margin-right: 1rem;
+    box-shadow: $box-shadow;
+    @include borderGold;
+  }
+
+  :where(.email, .phone, .adress) p:first-of-type {
+    color: $font-color;
+    text-transform: capitalize;
+    margin-top: 0;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    height: 8rem;
+    align-items: flex-end;
+  }
+
+  .copy {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .selectAllPage {
+    flex-direction: column-reverse;
+    aside {
+      margin-top: 0;
+      height: max-content;
+      width: clamp(50vw, 70vw, 900px);
+      img.myPicture,
+      p.myName,
+      div img,
+      div div p:first-of-type,
+      .icons {
+        display: none;
+      }
+      div,
+      div p {
+        margin: 0;
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      div {
+        div {
+          div {
+            padding: 2rem;
+            border-radius: $secondary-border-radius;
+            @include borderGold;
+            width: clamp(100%, 5rem, 5rem);
+            p {
+              font-size: clamp(1.2rem, 1.2vw, 1.5rem);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  aside {
+    display: none;
+  }
+}

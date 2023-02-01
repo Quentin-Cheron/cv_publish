@@ -1,0 +1,59 @@
+.about-me {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  margin: 0;
+  @media screen and (max-width: 960px) {
+    top: 0;
+    transform: translate(-50%, 0);
+    margin: 3rem 0;
+  }
+
+  main {
+    .moreInfoAboutMe {
+      width: 750px;
+    }
+
+    .group-passion {
+      div {
+        @media screen and (max-width: 1400px) {
+          margin: 0;
+        }
+      }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .content-passion {
+        width: 30rem;
+        box-shadow: $box-shadow;
+        display: flex;
+        align-items: center;
+        background: $gradient-info;
+        padding: 1.5rem;
+        border-radius: $secondary-border-radius;
+        @include borderGold;
+        margin: $margin-primary 0 0 0;
+        div {
+          margin-left: 1rem;
+          h3,
+          p {
+            margin: 0;
+          }
+          h3 {
+            margin-bottom: 5px;
+            font-weight: 100;
+          }
+        }
+        img {
+          width: 4.5rem;
+        }
+      }
+    }
+    @media screen and (max-width: 1400px) {
+      .moreInfoAboutMe {
+        width: 100%;
+      }
+    }
+  }
+}

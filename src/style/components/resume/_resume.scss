@@ -1,0 +1,36 @@
+.evolution {
+  position: relative;
+  margin-top: 6rem;
+  div {
+    display: flex;
+    margin-bottom: $margin-primary;
+    .circle {
+      font-weight: 100;
+      position: relative;
+      top: -4rem;
+      &::after {
+        @include afterOrBefore;
+        background-color: $orange-color;
+        width: 2rem;
+        height: 2rem;
+        border-radius: $primary-border-radius;
+        margin-left: $margin-primary;
+        left: 2.2rem;
+        position: absolute;
+      }
+    }
+    p:not(.circle) {
+      margin-left: 5rem;
+      width: 80%;
+      &::before {
+        @include afterOrBefore;
+        width: 3px;
+        height: 100%;
+        top: -2rem;
+        left: 6rem;
+        position: absolute;
+        background-color: $orange-color;
+      }
+    }
+  }
+}

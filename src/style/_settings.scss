@@ -1,0 +1,185 @@
+//font-face
+
+@font-face {
+  font-family: regular;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: bold;
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+
+//variable
+
+$primary-font: regular;
+$secondary-font: bold;
+
+$white-color: #fcfcfc;
+$orange-color: #f8b901;
+$gradient-color: linear-gradient(
+  120deg,
+  rgba(248, 185, 1, 0.5) 0%,
+  rgba(30, 30, 31, 1) 60%
+);
+$gradient-info: linear-gradient(
+  90deg,
+  rgba(248, 185, 1, 0.2) 0%,
+  rgb(30, 30, 31) 80%
+);
+$font-color: rgba(214, 214, 214, 0.7);
+$background-color-portfolio: rgba(42, 42, 43, 0.7);
+$primary-bg: #2a2a2b;
+$secondary-bg: #202021;
+
+$primary-border-radius: 30px;
+$secondary-border-radius: 5px;
+
+$border-gold: 1px solid $orange-color;
+
+$box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+
+$margin-primary: 3rem;
+
+//mixin
+
+@mixin bigFather {
+  background-color: $secondary-bg;
+  border-radius: $primary-border-radius;
+}
+
+@mixin afterOrBefore {
+  content: "";
+  display: inline-block;
+}
+
+@mixin borderGold {
+  border: $border-gold;
+  border-bottom: 0;
+  border-right: 0;
+  background: $gradient-info;
+  border-radius: $secondary-border-radius;
+}
+
+@mixin menuBurger {
+  content: "";
+  display: inline-block;
+  width: 4rem;
+  background-color: $orange-color;
+  border-radius: $secondary-border-radius;
+  cursor: pointer;
+  transition: 1s;
+}
+
+@mixin borderKnowledges {
+  content: "";
+  display: inline-block;
+  background-color: $primary-bg;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $white-color;
+  font-family: $primary-font;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-black {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+#principal-page {
+  @include bigFather;
+  width: clamp(50vw, 70vw, 900px);
+  overflow: hidden;
+  padding-bottom: 3rem;
+  @media screen and (max-width: 1400px) {
+    margin-bottom: $margin-primary;
+  }
+  @media screen and (max-width: 1000px) {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .selectAllPage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.selectAllPage {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  header h1 {
+    margin-top: $margin-primary;
+    @media screen and (max-width: 1400px) {
+      margin: 0;
+    }
+  }
+  .portfolio-page,
+  .contact-page,
+  .resume-page {
+    h1 {
+      text-transform: capitalize;
+    }
+  }
+  h1,
+  h2,
+  .resume-page h3 {
+    font-size: 2.5rem;
+    position: relative;
+    width: max-content;
+    padding-bottom: 1rem;
+    &:after {
+      content: "";
+      display: inline-block;
+      background-color: $orange-color;
+      border-radius: $secondary-border-radius;
+      width: 60%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .resume-page h3 {
+    margin: 3rem 5rem;
+  }
+  h2 {
+    margin: 0;
+    padding-top: 0;
+    font-size: 2.2rem;
+  }
+}
