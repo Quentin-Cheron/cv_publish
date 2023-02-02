@@ -12,16 +12,16 @@ export default class Resume extends Component {
         <div id="principal-page" className="resume-page">
           <header>
             <div className="full-nav">
-              <h1>resume</h1>
+              <h1>résumé</h1>
               <Navigation />
             </div>
           </header>
           <main>
             <p className="info">
-            Je suis entrée à Eden School et j'ai pu toucher pour la première fois une ligne de code en HTML 5 et CSS 3, commençant par des petits sites basics jusqu'à savoir faire de vrais sites usant de base de données MySql et Php, traitement de formulaire et bien plus. Ayant plus de 3000h de code HTML CSS Javascript Php Sass Sql.
+            Je suis entré à Eden School et j'ai pu toucher pour la première fois une ligne de code en HTML 5 et CSS 3, commençant par des petits sites basics jusqu'à savoir faire de vrais sites usant de base de données MySql et Php, traitement de formulaire et bien plus; j'ai plus de 3000h de code HTML CSS Javascript Php Sass Sql.
             </p>
             <h2>Mon Évolution</h2>
-            <Evolution />
+            <Evolution /> 
             <h2>Mes compétences</h2>
             {<Langages />}
           </main>

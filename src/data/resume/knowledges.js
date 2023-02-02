@@ -42,6 +42,10 @@ export const KnowledgeData = {
       type: "Figma",
       experience: .1,
     },
+    {
+      type: "Github",
+      experience: 1.5,
+    },
   ],
   academicLanguage: [
     {
@@ -50,5 +54,5 @@ export const KnowledgeData = {
     },
   ],
   certification: ["Brevet"],
-  capacityAcademic: ["Moyen", "Bon", "Très bon", "Excellent"],
+  capacityAcademic: ["A2", "B1", "B2", "C1"],
 };

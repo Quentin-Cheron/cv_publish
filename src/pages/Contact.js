@@ -16,7 +16,7 @@ const Contact = () => {
           </div>
         </header>
         <main>
-          <img src="img/photo.png" className="myPicture" alt="" />
+          <img src="img/rose.png" className="myPicture" alt="" />
           <p className="myName">quentin chéron</p>
           {infoContactDate.map((e) => {
             return (

@@ -1,4 +1,4 @@
-import React, { Component, useRef, useEffect } from "react";
+import React, { Component, useRef } from "react";
 
 export default class card extends Component {
   state = {
@@ -26,7 +26,6 @@ export default class card extends Component {
 
   changeBgStyle = () => {
     if (this.state.showInfo) {
-      
     }
   };
 
@@ -44,16 +43,18 @@ export default class card extends Component {
             return <img key={e} src={e} alt="" />;
           })}
         </div>
-        <img src={imgSrc} className="imgProject" alt="" />
-        <img
-          src="img/icons/checked.png"
-          className="check"
-          alt=""
-          onClick={() => {
-            this.moreInfo();
-            this.changeStyleBody();
-          }}
-        />
+        <div className="flex-colum">
+          <img src={imgSrc} className="imgProject" alt="" />
+          <img
+            src="img/icons/checked.png"
+            className="check"
+            alt=""
+            onClick={() => {
+              this.moreInfo();
+              this.changeStyleBody();
+            }}
+          />
+        </div>
         {this.state.showInfo && (
           <div
             className="showInfo"

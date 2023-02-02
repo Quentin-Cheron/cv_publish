@@ -65,7 +65,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      div:not(.icons) {
+      div:not(.icons, .flex-colum) {
         background-color: $primary-bg;
         border-radius: $secondary-border-radius;
         width: 20rem;
@@ -80,15 +80,23 @@
             }
           }
         }
+        .flex-colum {
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+        }
         h3 {
           margin: 2rem 0 5px 0;
         }
       }
       .imgProject {
         margin: 1rem 0;
+        height: 10rem;
+        width: 100%;
+        padding: 0 1rem;
       }
       .check {
-        margin: 1rem 0;
+        margin-bottom: 1rem;
         cursor: pointer;
       }
       .showInfo {

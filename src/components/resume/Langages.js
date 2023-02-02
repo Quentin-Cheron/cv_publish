@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ProgressBar from "react-animated-progress-bar";
 import { KnowledgeData } from "../../data/resume/knowledges";
 
 export default class Langages extends Component {
@@ -6,6 +7,7 @@ export default class Langages extends Component {
     years: 4,
     knowledgesData: KnowledgeData,
   };
+
   render() {
     const {
       langages,
@@ -24,10 +26,11 @@ export default class Langages extends Component {
           style={{ width: this.state.years * 5 + "%" }}
           key={i}
         >
-          {i}ans
+          {i > 1 ? i + "ans" : i + "an"}
         </p>
       );
     }
+
     return (
       <div className="knowledges">
         <h3>Langages</h3>
@@ -39,13 +42,16 @@ export default class Langages extends Component {
                 return (
                   <li key={item.type} className="groupKnowledges">
                     <h4>{item.type}</h4>
-                    <span
-                      className="knowledgesBorder"
-                      style={{
-                        width:
-                          item.experience * this.state.years * 4.2 + "%",
+                    <ProgressBar
+                      width={item.experience * this.state.years * 4.2 + "%"}
+                      height="3px"
+                      rect
+                      percentage="100"
+                      rectBorderRadius="20px"
+                      defColor={{
+                        excellent: "#f8b901",
                       }}
-                    ></span>
+                    />
                   </li>
                 );
               })}
@@ -58,12 +64,16 @@ export default class Langages extends Component {
                 return (
                   <li key={item.type} className="groupKnowledges">
                     <h4>{item.type}</h4>
-                    <span
-                      className="knowledgesBorder"
-                      style={{
-                        width: item.experience * this.state.years * 4.2 + "%",
+                    <ProgressBar
+                      width={item.experience * this.state.years * 4.2 + "%"}
+                      height="3px"
+                      rect
+                      percentage="100"
+                      rectBorderRadius="20px"
+                      defColor={{
+                        excellent: "#f8b901",
                       }}
-                    ></span>
+                    />
                   </li>
                 );
               })}
@@ -76,12 +86,16 @@ export default class Langages extends Component {
                 return (
                   <li key={item.type} className="groupKnowledges">
                     <h4>{item.type}</h4>
-                    <span
-                      className="knowledgesBorder"
-                      style={{
-                        width: item.experience * this.state.years * 4.2 + "%",
+                    <ProgressBar
+                      width={item.experience * this.state.years * 4.2 + "%"}
+                      height="3px"
+                      rect
+                      percentage="100"
+                      rectBorderRadius="20px"
+                      defColor={{
+                        excellent: "#f8b901",
                       }}
-                    ></span>
+                    />
                   </li>
                 );
               })}
@@ -94,12 +108,16 @@ export default class Langages extends Component {
                 return (
                   <li key={item.type} className="groupKnowledges">
                     <h4>{item.type}</h4>
-                    <span
-                      className="knowledgesBorder"
-                      style={{
-                        width: item.experience * this.state.years * 4.2 + "%",
+                    <ProgressBar
+                      width={item.experience * this.state.years * 4.2 + "%"}
+                      height="3px"
+                      rect
+                      percentage="100"
+                      rectBorderRadius="20px"
+                      defColor={{
+                        excellent: "#f8b901",
                       }}
-                    ></span>
+                    />
                   </li>
                 );
               })}
@@ -107,18 +125,22 @@ export default class Langages extends Component {
           </div>
         </div>
         <div className="academicLanguage">
-          <h3>Compétences académique</h3>
+          <h3>Compétence académique</h3>
           <div>
             {academicLanguage.map((item) => {
               return (
                 <div key={item.type}>
                   <h4 key="title">{item.type}</h4>
-                  <span
-                    className="knowledgesBorder"
-                    style={{
-                      width: item.experience * this.state.years * 4.2 + "%",
+                  <ProgressBar
+                    width={item.experience * this.state.years * 4.2 + "%"}
+                    height="3px"
+                    rect
+                    percentage="100"
+                    rectBorderRadius="20px"
+                    defColor={{
+                      excellent: "#f8b901",
                     }}
-                  ></span>
+                  />
 
                   <ul>
                     {capacityAcademic.map((e) => {
@@ -131,7 +153,7 @@ export default class Langages extends Component {
           </div>
         </div>
         <div className="certification">
-          <h3>Certification</h3>
+          <h3>Diplôme</h3>
           <ul>
             {certification.map((item) => {
               return (

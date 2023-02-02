@@ -5,6 +5,7 @@ export const cardData = [
     text: "Création d'un blog avec la possibilité d'ajouter des taches, des listes",
     languages: ["Php", "Css"],
     iconSrc: ["img/icons/php.png", "img/icons/css.png"],
+    imgSrc: "img/project/Blog.png",
     sourceCode: "https://github.com/Quentin-Cheron/Blog",
   },
   {
@@ -13,6 +14,7 @@ export const cardData = [
     text: "Création d'un site pour s'entrainer à coder en HTML / Css",
     languages: ["html", "Css", "Sass"],
     iconSrc: ["img/icons/html.png", "img/icons/css.png", "img/icons/sass.png"],
+    imgSrc: "img/project/Rap.png",
     sourceCode: "https://github.com/Quentin-Cheron/Rap",
   },
   {
@@ -21,6 +23,7 @@ export const cardData = [
     text: "Création de mon cv",
     languages: ["React", "Sass"],
     iconSrc: ["img/icons/react.png", "img/icons/sass.png"],
+    imgSrc: "img/project/Cv.png",
     sourceCode: "https://github.com/Quentin-Cheron/Cv",
   },
   {
@@ -29,6 +32,7 @@ export const cardData = [
     text: "Création de multiples animations pour des menus",
     languages: ["Html", "Css"],
     iconSrc: ["img/icons/html.png", "img/icons/css.png"],
+    imgSrc: "img/project/Animationmenu.png",
     sourceCode: "https://github.com/Quentin-Cheron/Animation_menu",
   },
   {
@@ -37,6 +41,7 @@ export const cardData = [
     text: "Création d'une TodoList permettant d'ajouter des taches",
     languages: ["Html", "Css", "Js"],
     iconSrc: ["img/icons/css.png", "img/icons/html.png", "img/icons/javascript.png"],
+    imgSrc: "img/project/TodoList.png",
     sourceCode: "https://github.com/Quentin-Cheron/TodoList",
   },
   {
@@ -45,6 +50,7 @@ export const cardData = [
     text: "Création d'un timer",
     languages: ["Javascript", "Css", "Html"],
     iconSrc: ["img/icons/javascript.png", "img/icons/css.png", "img/icons/html.png"],
+    imgSrc: "img/project/Timer.png",
     sourceCode: "https://github.com/Quentin-Cheron/Timer",
   },
   {
@@ -53,6 +59,7 @@ export const cardData = [
     text: "Création d'un quiz avec messages d'erreurs",
     languages: ["Css", "Html", "Javascript", "Sass"],
     iconSrc: ["img/icons/css.png", "img/icons/javascript.png", "img/icons/sass.png", "img/icons/html.png"],
+    imgSrc: "img/project/Quizz.png",
     sourceCode: "https://github.com/Quentin-Cheron/Quizz",
   },
   {
@@ -61,6 +68,7 @@ export const cardData = [
     text: "Création d'un filtre de nom",
     languages: ["Javascript", "Css", "Html"],
     iconSrc: ["img/icons/css.png", "img/icons/javascript.png", "img/icons/html.png"],
+    imgSrc: "img/project/Filtre.png",
     sourceCode: "https://github.com/Quentin-Cheron/Filter-name",
   },
   {
@@ -69,6 +77,7 @@ export const cardData = [
     text: "Création d'un formulaire pouvant ajouter des stagiaires à des formateurs pour ensuite les afficher",
     languages: ["Javascript", "Css", "Sass", "Php"],
     iconSrc: ["img/icons/css.png", "img/icons/javascript.png", "img/icons/sass.png", "img/icons/php.png"],
+    imgSrc: "img/project/Formation.png",
     sourceCode: "https://github.com/Quentin-Cheron/Formations",
   },
   {
@@ -77,6 +86,7 @@ export const cardData = [
     text: "Création d'un site comportant un formulaire de contact",
     languages: ["Javascript", "Css", "Sass", "Html"],
     iconSrc: ["img/icons/css.png", "img/icons/javascript.png", "img/icons/sass.png", "img/icons/html.png"],
+    imgSrc: "img/project/Salle_de_sport.png",
     sourceCode: "https://github.com/Quentin-Cheron/Salle_de_sport",
   },
 ];

@@ -6,7 +6,7 @@ export const evolutionData = [
   },
   {
     id: 3,
-    text: "J'ai redoublé la 1re année ce qui m'a value d'être plus compétent sur certains sujets.",
+    text: "J'ai redoublé la 1re année ce qui m'a valu d'être plus compétent sur certains sujets.",
     date: 2021,
   },
   {
