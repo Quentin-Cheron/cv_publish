@@ -14,7 +14,7 @@ export const KnowledgeData = {
     },
     {
       type: "Php",
-      experience: .6,
+      experience: 0.6,
     },
     {
       type: "MySql",
@@ -27,20 +27,20 @@ export const KnowledgeData = {
       experience: 1,
     },
     {
-      type: "Laravel",
-      experience: 0,
+      type: "Bootstrap",
+      experience: 0.2,
     },
   ],
   cms: [
     {
       type: "Wordpress",
-      experience: .1,
+      experience: 0.1,
     },
   ],
   otherKnowledges: [
     {
       type: "Figma",
-      experience: .1,
+      experience: 0.01,
     },
     {
       type: "Github",
@@ -50,9 +50,9 @@ export const KnowledgeData = {
   academicLanguage: [
     {
       type: "Anglais",
-      experience: 1,
+      experience: 2,
     },
   ],
   certification: ["Brevet"],
-  capacityAcademic: ["A2", "B1", "B2", "C1"],
+  capacityAcademic: ["A1", "A2", "B1", "B2", "C1"],
 };

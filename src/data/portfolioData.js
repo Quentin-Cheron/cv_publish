@@ -50,7 +50,7 @@ export const cardData = [
     text: "Création d'un timer",
     languages: ["Javascript", "Css", "Html"],
     iconSrc: ["img/icons/javascript.png", "img/icons/css.png", "img/icons/html.png"],
-    imgSrc: "img/project/Timer.png",
+    imgSrc: "/public/img/project/Timer.png",
     sourceCode: "https://github.com/Quentin-Cheron/Timer",
   },
   {

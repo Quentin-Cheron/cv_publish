@@ -43,7 +43,7 @@ export default class Langages extends Component {
                   <li key={item.type} className="groupKnowledges">
                     <h4>{item.type}</h4>
                     <ProgressBar
-                      width={item.experience * this.state.years * 4.2 + "%"}
+                      width={item.experience * this.state.years * 3.5 + "%"}
                       height="3px"
                       rect
                       percentage="100"
@@ -65,7 +65,7 @@ export default class Langages extends Component {
                   <li key={item.type} className="groupKnowledges">
                     <h4>{item.type}</h4>
                     <ProgressBar
-                      width={item.experience * this.state.years * 4.2 + "%"}
+                      width={item.experience * this.state.years * 3.5 + "%"}
                       height="3px"
                       rect
                       percentage="100"
@@ -87,7 +87,7 @@ export default class Langages extends Component {
                   <li key={item.type} className="groupKnowledges">
                     <h4>{item.type}</h4>
                     <ProgressBar
-                      width={item.experience * this.state.years * 4.2 + "%"}
+                      width={item.experience * this.state.years * 3.5 + "%"}
                       height="3px"
                       rect
                       percentage="100"
@@ -109,7 +109,7 @@ export default class Langages extends Component {
                   <li key={item.type} className="groupKnowledges">
                     <h4>{item.type}</h4>
                     <ProgressBar
-                      width={item.experience * this.state.years * 4.2 + "%"}
+                      width={item.experience * this.state.years * 3.5 + "%"}
                       height="3px"
                       rect
                       percentage="100"
@@ -132,7 +132,7 @@ export default class Langages extends Component {
                 <div key={item.type}>
                   <h4 key="title">{item.type}</h4>
                   <ProgressBar
-                    width={item.experience * this.state.years * 4.2 + "%"}
+                    width={item.experience * this.state.years * 3.5 + "%"}
                     height="3px"
                     rect
                     percentage="100"
