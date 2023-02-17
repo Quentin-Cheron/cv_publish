@@ -44,7 +44,6 @@ export default class card extends Component {
           })}
         </div>
         <div className="flex-colum">
-          <img src={imgSrc} className="imgProject" alt="" />
           <img
             src="img/icons/checked.png"
             className="check"
