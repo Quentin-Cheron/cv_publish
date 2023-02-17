@@ -22,6 +22,6 @@ export const dataPassion = [
     {
         id: 5,
         title: "La musique",
-        icon: "img/icons/html.png"
+        icon: "img/icons/music.png"
     },
 ];
