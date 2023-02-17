@@ -77,7 +77,7 @@ export const cardData = [
     text: "Création d'un formulaire pouvant ajouter des stagiaires à des formateurs pour ensuite les afficher",
     languages: ["Javascript", "Css", "Sass", "Php"],
     iconSrc: ["img/icons/css.png", "img/icons/javascript.png", "img/icons/sass.png", "img/icons/php.png"],
-    imgSrc: "/static/img/projetc/Formation.png",
+    imgSrc: "/img/project/Formation.png",
     sourceCode: "https://github.com/Quentin-Cheron/Formations",
   },
   {
